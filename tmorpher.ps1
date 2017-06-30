@@ -3,7 +3,7 @@
 ##############################
 
 $tmorphURL = "https://github.com/starshipx/tMorph/releases/download/v1.0.0/tMorph.zip"
-$tmorphDir =  "C:\Dev\tmorph"
+$tmorphDir =  "C:\Temp\tmorph"
 
 $remoteVersion = Invoke-WebRequest "https://starshipx.github.io/tMorph/"
 $remoteVersion = $remoteVersion.ParsedHtml.GetElementsByTagName('p') | Where-Object {$_.OuterText -like "*World of Warcraft*"} | Select-Object -expand OuterText
